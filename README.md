@@ -24,8 +24,7 @@
 
 # 📖 Blog app <a name="about-project"></a>
 
-**Blog app** The Blog app will be a classic example of a blog website. I created a fully functional website that will show the list of posts and empower readers to interact with them by adding comments and liking posts.
-
+**Blog app** This Blog app will be a classic example of a blog website. I will create a fully functional website that will show the list of posts and empower readers to interact with them by adding comments and liking posts.
 
 ## 🛠 Built With <a name="built-with"></a>
 
