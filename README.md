@@ -64,13 +64,11 @@ In order to run this project you need:
 Example commands:
 
 ```
-  ruby solver.rb
 ```
 
 test 
 
 ```
-  rspec solver.rb
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -84,16 +82,6 @@ test
 - GitHub: [@githubhandle](https://momotsow.github.io/microverse-portfolio/)
 - Twitter: [@twitterhandle](#)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/khomotso-prudence-mkansi/)
-
-👤 **Vanel Nwaba**
-- GitHub: [vanelnw](https://github.com/vanelnw)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/va-nw)
-
-👤 **Yousef Hesham**
-
-- GitHub: [@yosefHesham](https://github.com/yosefHesham)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/yousef-hesham98)
-- Twitter: [@yousef](https://twitter.com/Yousef45653478)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
