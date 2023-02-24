@@ -43,10 +43,10 @@
 
 ### Key Features <a name="key-features"></a>
 
-- Add comments
-- Add likes
-- Delete comments
-- Remove likes
+- Add comments for the blog
+- Add likes for the blog
+- Delete comments for the blog
+- Remove likes for the blog
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
