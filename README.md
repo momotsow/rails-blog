@@ -57,6 +57,7 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
+### Setup
 Clone project
 
 ```bash
@@ -69,6 +70,31 @@ Run the program
 
 ```bash
 rails s
+```
+
+### Install
+
+Install this project with:
+
+```sh
+  cd my-folder
+  gem install
+```
+
+### Usage
+
+To run the project, execute the following command:
+
+```sh
+  rails server
+```
+
+### Run tests
+
+To run tests, run the following command:
+
+```sh
+  rspec
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
