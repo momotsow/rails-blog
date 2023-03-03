@@ -1,4 +1,26 @@
 {
+  "name": "rails-blog",
+  "version": "1.0.0",
+  "description": "![](https://img.shields.io/badge/Microverse-blueviolet)\r <a name=\"readme-top\"></a>",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/momotsow/rails-blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/momotsow/rails-blog/issues"
+  },
+  "homepage": "https://github.com/momotsow/rails-blog#readme",
   "devDependencies": {
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
