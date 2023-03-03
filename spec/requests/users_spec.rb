@@ -20,4 +20,12 @@ RSpec.describe UsersController, type: :request do
       expect(response).to render_template(:index)
     end
   end
+
+  # If the response body includes correct placeholder text.
+  it 'displays the correct user' do
+    get user_path(user)
+    expect(response.body).to include(user.name)
+    expect(response.body).to include(user.photo)
+    expect(response.body).to include(user.bio)
+  end
 end

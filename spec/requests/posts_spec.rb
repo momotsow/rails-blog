@@ -24,6 +24,21 @@ RSpec.describe 'Posts', type: :request do
         expect(response.status).to eq(200)
         expect(response).to render_template('show')
       end
+      # If a correct template was rendered.
+      it 'renders the show template' do
+        user = User.create(name: 'Paulina', photo: 'https://unsplash.com/es/fotos/vuBaykPW1Dk', bio: 'Engineer')
+        post = Post.create(title: 'My First Post', text: 'Hello World', author: user)
+        get "/users/#{user.id}/posts/#{post.id}"
+        expect(response).to render_template(:show)
+      end
+      # If the response body includes correct placeholder text.
+      it 'includes the correct placeholder text in the response body' do
+        user = User.create(name: 'Paulina', photo: 'https://unsplash.com/es/fotos/vuBaykPW1Dk', bio: 'Engineer')
+        post = Post.create(title: 'My First Post', text: 'Hello World', author: user)
+        get "/users/#{user.id}/posts/#{post.id}"
+        expect(response.body).to include(post.title)
+        expect(response.body).to include(post.text)
+      end
     end
   end
 end
