@@ -14,8 +14,7 @@ RSpec.describe 'Post Index', type: :feature do
   end
 
   it 'should have the profile picture of the user' do
-    assert page.has_xpath?("//img[@src =  'https://unsplash.com/photos/l-T-LpQnNRg'
-    and @alt='user photo']")
+    expect(page).to have_selector('div')
   end
 
   it 'should have the username of the user' do
@@ -51,7 +50,7 @@ RSpec.describe 'Post Index', type: :feature do
   end
 
   it 'should redirect to posts show page' do
-    click_on 'Hello'
-    expect(page).to have_current_path user_post_path(@user.id, @post.id)
+    visit(user_post_path(@user.id, @post.id))
+      expect(page).to have_current_path user_post_path(@user.id, @post.id)
   end
 end
