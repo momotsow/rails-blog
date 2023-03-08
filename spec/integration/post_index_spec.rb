@@ -3,9 +3,9 @@ require 'rails_helper'
 RSpec.describe 'Post Index', type: :feature do
   before :each do
     @user = User.create(
-      name: 'John Smith',
+      name: 'Tom',
       photo: 'https://unsplash.com/photos/l-T-LpQnNRg',
-      bio: 'Partner representative'
+      bio: 'Awesome Writer'
     )
     @post = Post.create(author: @user, title: 'Hello', text: 'This is my first post!')
     Comment.create(post: @post, author: @user, text: 'Happy to comment!')
