@@ -51,6 +51,6 @@ RSpec.describe 'Post Index', type: :feature do
 
   it 'should redirect to posts show page' do
     visit(user_post_path(@user.id, @post.id))
-      expect(page).to have_current_path user_post_path(@user.id, @post.id)
+    expect(page).to have_current_path user_post_path(@user.id, @post.id)
   end
 end

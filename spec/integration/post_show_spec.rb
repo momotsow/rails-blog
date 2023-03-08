@@ -41,4 +41,3 @@ RSpec.describe 'Post Page Index', type: :feature do
     expect(page).to have_content('Happy to comment!')
   end
 end
-
