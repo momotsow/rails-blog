@@ -25,6 +25,6 @@ RSpec.describe 'User Index', type: :feature do
   end
   it 'should redirect to that users show page on click' do
     visit(user_path(@user1.id))
-    expect(page).to have_content(@user1.bio) 
+    expect(page).to have_content(@user1.bio)
   end
 end

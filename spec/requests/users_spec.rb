@@ -3,8 +3,8 @@ require 'rails_helper'
 RSpec.describe UsersController, type: :controller do
   before(:all) do
     @user = User.create(
-      name: 'Tom', 
-      photo: 'https://unsplash.com/photos/l-T-LpQnNRg', 
+      name: 'Tom',
+      photo: 'https://unsplash.com/photos/l-T-LpQnNRg',
       bio: 'Awesome Writer'
     )
   end
@@ -24,5 +24,4 @@ RSpec.describe UsersController, type: :controller do
       expect(response).to render_template(:index)
     end
   end
-
 end
