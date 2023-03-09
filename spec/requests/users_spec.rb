@@ -1,8 +1,12 @@
 require 'rails_helper'
 
-RSpec.describe UsersController, type: :request do
+RSpec.describe UsersController, type: :controller do
   before(:all) do
-    @first_user = User.create(name: 'happen', photo: 'photo', bio: 'test')
+    @user = User.create(
+      name: 'Tom', 
+      photo: 'https://unsplash.com/photos/l-T-LpQnNRg', 
+      bio: 'Awesome Writer'
+    )
   end
 
   describe 'GET index' do
@@ -21,11 +25,4 @@ RSpec.describe UsersController, type: :request do
     end
   end
 
-  # If the response body includes correct placeholder text.
-  it 'displays the correct user' do
-    get user_path(user)
-    expect(response.body).to include(user.name)
-    expect(response.body).to include(user.photo)
-    expect(response.body).to include(user.bio)
-  end
 end

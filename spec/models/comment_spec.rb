@@ -5,7 +5,7 @@ RSpec.describe Comment, type: :model do
   post = Post.new(title: 'Hi post', text: 'This is my first post', author:, likes_counter: 0, comments_counter: 0)
   post.save!
 
-  commentor = User.new(name: 'Tim', photo: 'cool photo link', bio: 'Bio', posts_counter: 0)
+  commentor = User.new(name: 'Tim', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Bio', posts_counter: 0)
   commentor.save!
 
   post.comments.create!(text: 'Say hi', author: commentor)
